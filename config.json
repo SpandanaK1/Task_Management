@@ -1,0 +1,41 @@
+{
+    "development": {
+        "APP_NAME": "Bill service",
+        "SERVER_URL": "http://localhost",
+        "SERVER_PORT": 1728,
+        "DB_TYPE": "postgreSQL",
+        "SQL": {
+            "CLIENT": "postgresql",
+            "HOST": "postgres-banking-service.carttg0vyatu.us-east-1.rds.amazonaws.com",
+            "PORT": "5432",
+            "USER": "postgres",
+            "PASWD": "BluePal123#",
+            "DATABASE": "postgres",
+            "COONECT_STRING": "(DESCRIPTION =(ADDRESS =( PROTOCOL = TCP)(HOST = postgres-banking-service.carttg0vyatu.us-east-1.rds.amazonaws.com)(PORT = 5423))(CONNECT_DATA = (SERVER = DEDICATED)(SID = postgres)))",
+            "POOL": {
+                "MIN": 0,
+                "MAX": 3
+            },
+            "CONNECTION_TIMEOUT": 200000
+        },
+        "SERVICE_URLS": {
+            "BANKING_SERVICE": "http://localhost:1728"
+        },
+        "EXTERNAL_SERVICE_URLS": {
+            "DOCUMENT": "http://localhost:9099"
+        },
+        "UPLOADS": null,
+        "ENCRYPT_SECRET_KEY": "bLuePaLRENTPAY",
+        "LOG_LEVEL": "info",
+        "APP_VERSION": "23.6.0, 20th Jun, 2023",
+        "SMTP": {
+            "HOST": "smtp.gmail.com",
+            "PORT": 587,
+            "SECURE": true,
+            "SENDER": "Banking Service <banking@bluepal.com>",
+            "EMAIL": "reshma0970@gmail.com",           
+            "PASWD": "dqlqofteqkxayrqr"
+        },
+        "SUPPORT_TEST_EMAIL_PATTERN": true
+    }
+}
